@@ -8,7 +8,7 @@ namespace HarshaBank.Entities
     /// <summary>
     /// Represents customer of the bank
     /// </summary>
-    public class Customer : ICustomer
+    public class Customer : ICustomer, ICloneable
     {
 
 
@@ -97,6 +97,16 @@ namespace HarshaBank.Entities
             set
             {
             }
+        }
+
+
+        /// <summary>
+        /// Creates and returns a copy of the current instance.
+        /// </summary>
+        /// <returns>A new object that is a copy of the current instance</returns>
+        public object Clone()
+        {
+            return new Customer() { CustomerID = this.CustomerID, CustomerCode = this.CustomerCode, CustomerName = this.CustomerName, Country = this.Country, Adress = this.Adress, City = this.City, Landmark = this.Landmark, Mobile = this.Mobile };
         }
         #endregion
 
