@@ -180,6 +180,7 @@ namespace HarshaBank.DataAccessLayer
                     existingAccount.AccountNumber = account.AccountNumber;
                     existingAccount.CustomerID = account.CustomerID;
                     existingAccount.Balance = account.Balance;
+
                     return true;
                 }
                 else
