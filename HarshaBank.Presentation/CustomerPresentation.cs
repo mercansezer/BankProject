@@ -42,6 +42,19 @@ namespace HarshaBank.Presentation
                 Console.WriteLine("Mobile : ");
                 string mobile = Console.ReadLine();
                 customer.Mobile = mobile;
+
+                Guid newCustomerId = businessLogicLayer.AddCustomer(customer as Customer);
+
+                List<Customer> matchingCustomers = businessLogicLayer.GetCustomersByCondition(item => item.CustomerID == newCustomerId);
+
+                if (matchingCustomers.Count > 0)
+                {
+                    Console.WriteLine(matchingCustomers[0].CustomerCode);
+                }
+                else
+                {
+                    Console.WriteLine("Customer Not added");
+                }
             }
             catch (CustomerException ex)
             {
@@ -50,19 +63,6 @@ namespace HarshaBank.Presentation
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }
-
-            Guid newCustomerId = businessLogicLayer.AddCustomer(customer as Customer);
-
-            List<Customer> matchingCustomers = businessLogicLayer.GetCustomersByCondition(item => item.CustomerID == newCustomerId);
-
-            if (matchingCustomers.Count > 0)
-            {
-                Console.WriteLine(matchingCustomers[0].CustomerCode);
-            }
-            else
-            {
-                Console.WriteLine("Customer Not added");
             }
 
         }
