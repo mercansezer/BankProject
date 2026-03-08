@@ -23,17 +23,6 @@ Proje, sorumlulukların net ayrımı (**Separation of Concerns**) için 4 ana ka
 * **Veri Yönetimi:** In-Memory Collections (Generic Lists)
 * **Mimari:** N-Tier Architecture (Katmanlı Mimari)
 
-
-## Klasör Yapısı
-
-```text
-📂 BankingProject
-├── 📂 BankingProject.BusinessLayer      # İş Kuralları & Mantık
-├── 📂 BankingProject.DataAccessLayer    # Veri Yönetimi (List-Based)
-├── 📂 BankingProject.EntityLayer        # Modeller & Nesneler
-└── 📂 BankingProject.PresentationLayer  # UI / Arayüz
-
-
 ## Kurulum 
 
 Projede herhangi bir veritabanı yapılandırması yapılmadığı için doğrudan çalıştırılmaya hazırdır. 
@@ -50,3 +39,15 @@ Aşağıdaki adımları izleyebilirsiniz:
 
 4. Çalıştır:
    Üst paneldeki Start (veya F5) butonuna basarak uygulamayı test etmeye başlayın.
+   
+## Klasör Yapısı
+
+```text
+📂 BankingProject
+├── 📂 BankingProject.BusinessLayer      # İş Kuralları & Mantık
+├── 📂 BankingProject.DataAccessLayer    # Veri Yönetimi (List-Based)
+├── 📂 BankingProject.EntityLayer        # Modeller & Nesneler
+└── 📂 BankingProject.PresentationLayer  # UI / Arayüz
+
+
+
