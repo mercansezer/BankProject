@@ -20,9 +20,9 @@ Proje, sorumlulukların net ayrımı (**Separation of Concerns**) için 4 ana ka
 ## Kullanılan Teknolojiler
 
 * **Dil:** C#
-* **Framework:** .NET Framework
 * **Veri Yönetimi:** In-Memory Collections (Generic Lists)
 * **Mimari:** N-Tier Architecture (Katmanlı Mimari)
+
 
 ## Klasör Yapısı
 
@@ -32,6 +32,9 @@ Proje, sorumlulukların net ayrımı (**Separation of Concerns**) için 4 ana ka
 ├── 📂 BankingProject.DataAccessLayer    # Veri Yönetimi (List-Based)
 ├── 📂 BankingProject.EntityLayer        # Modeller & Nesneler
 └── 📂 BankingProject.PresentationLayer  # UI / Arayüz
+
+
+## Kurulum 
 
 Projede herhangi bir veritabanı yapılandırması yapılmadığı için doğrudan çalıştırılmaya hazırdır. 
 Aşağıdaki adımları izleyebilirsiniz:
